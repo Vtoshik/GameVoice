@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterController">
+   <children>
+      <Button fx:id="registerButton" layoutX="274.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleRegisterButtonAction" text="Register" />
+      <TextField fx:id="regUsername" layoutX="226.0" layoutY="125.0" promptText="usernname" />
+      <Label fx:id="regLabel" layoutX="268.0" layoutY="85.0" text="Registration" />
+      <PasswordField fx:id="regPassword" layoutX="226.0" layoutY="175.0" promptText="password" />
+      <Button fx:id="BackToMain" layoutX="29.0" layoutY="351.0" mnemonicParsing="false" onAction="#BackToTheMainMenu" text="Main Menu" />
+   </children>
+</Pane>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/User/Desktop/New folder (2)</OriginalElement>
+  <nodes>
+    <node x="1079.0" y="1398.0">gui.Add_Category</node>
+    <node x="744.5" y="2202.0">gui.AdminPageApplication</node>
+    <node x="599.0" y="2042.0">gui.DeleteCategoryWindow</node>
+    <node x="-123.0" y="2177.0">gui.StartMenuController</node>
+    <node x="816.5" y="1422.0">gui.RegisterApplication</node>
+    <node x="887.0" y="2042.0">gui.RegisterController</node>
+    <node x="1107.5" y="322.0">gui.LoginApplication</node>
+    <node x="224.0" y="822.0">gui.Program</node>
+    <node x="703.0" y="869.5">users.User</node>
+    <node x="-116.0" y="525.0">main.IDandPassword</node>
+    <node x="-32.5" y="1085.0">main.MainLogic</node>
+    <node x="293.5" y="82.0">gui.BaseEventFollower</node>
+    <node x="375.0" y="2190.0">gui.LoginController</node>
+    <node x="370.5" y="334.0">gui.Event_follower</node>
+    <node x="60.5" y="285.0">users.UserContainer</node>
+    <node x="1163.5" y="2202.0">gui.VotingApplication</node>
+    <node x="273.0" y="2042.0">gui.VotingResults</node>
+    <node x="206.5" y="501.0">main.Vote</node>
+    <node x="508.0" y="1434.0">main.CustomExceptionHandler</node>
+    <node x="942.0" y="881.5">users.Administrator</node>
+    <node x="430.5" y="-13.5">gui.Follower</node>
+    <node x="945.0" y="501.0">users.Default_User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gui.Event_follower" target="gui.BaseEventFollower" relationship="GENERALIZATION">
+      <point x="-53.25" y="-44.0" />
+      <point x="423.75" y="298.0" />
+      <point x="397.0" y="298.0" />
+      <point x="0.0" y="56.0" />
+    </edge>
+    <edge source="gui.LoginController" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-68.0" />
+      <point x="537.0" y="1998.0" />
+      <point x="357.0" y="1998.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="gui.StartMenuController" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-81.0" />
+      <point x="57.0" y="2018.0" />
+      <point x="357.0" y="2018.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="gui.RegisterController" target="gui.Program" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="1057.0" y="1998.0" />
+      <point x="897.0" y="1998.0" />
+      <point x="897.0" y="1978.0" />
+      <point x="337.0" y="1978.0" />
+      <point x="0.0" y="116.0" />
+    </edge>
+    <edge source="gui.Event_follower" target="gui.Follower" relationship="REALIZATION">
+      <point x="53.25" y="-44.0" />
+      <point x="530.25" y="298.0" />
+      <point x="537.0" y="298.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="main.MainLogic" target="main.Vote" relationship="TO_MANY">
+      <point x="0.0" y="-393.0" />
+      <point x="137.0" y="1058.0" />
+      <point x="177.0" y="1058.0" />
+      <point x="177.0" y="778.0" />
+      <point x="317.0" y="778.0" />
+      <point x="0.0" y="117.0" />
+    </edge>
+    <edge source="gui.VotingApplication" target="gui.Event_follower" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="1257.0" y="2018.0" />
+      <point x="937.0" y="2018.0" />
+      <point x="937.0" y="1558.0" />
+      <point x="477.0" y="1558.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+    <edge source="main.MainLogic" target="users.UserContainer" relationship="TO_ONE">
+      <point x="0.0" y="-393.0" />
+      <point x="137.0" y="1058.0" />
+      <point x="177.0" y="1058.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="users.Administrator" target="users.Default_User" relationship="GENERALIZATION">
+      <point x="0.0" y="-56.5" />
+      <point x="0.0" y="117.0" />
+    </edge>
+    <edge source="users.User" target="users.Default_User" relationship="GENERALIZATION">
+      <point x="0.0" y="-68.5" />
+      <point x="797.0" y="838.0" />
+      <point x="1057.0" y="838.0" />
+      <point x="0.0" y="117.0" />
+    </edge>
+    <edge source="gui.RegisterController" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="1057.0" y="1998.0" />
+      <point x="897.0" y="1998.0" />
+      <point x="897.0" y="1938.0" />
+      <point x="357.0" y="1938.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="gui.VotingResults" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="gui.DeleteCategoryWindow" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="717.0" y="1998.0" />
+      <point x="357.0" y="1998.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="gui.AdminPageApplication" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="857.0" y="1998.0" />
+      <point x="357.0" y="1998.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="main.MainLogic" target="main.IDandPassword" relationship="TO_ONE">
+      <point x="0.0" y="-393.0" />
+      <point x="137.0" y="1058.0" />
+      <point x="177.0" y="1058.0" />
+      <point x="177.0" y="1038.0" />
+      <point x="17.0" y="1038.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="gui.StartMenuController" target="main.IDandPassword" relationship="TO_ONE">
+      <point x="0.0" y="-81.0" />
+      <point x="57.0" y="2138.0" />
+      <point x="-63.0" y="2138.0" />
+      <point x="-63.0" y="1058.0" />
+      <point x="17.0" y="1058.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+    <edge source="gui.VotingApplication" target="main.MainLogic" relationship="TO_ONE">
+      <point x="0.0" y="-56.0" />
+      <point x="1257.0" y="2018.0" />
+      <point x="937.0" y="2018.0" />
+      <point x="937.0" y="1918.0" />
+      <point x="357.0" y="1918.0" />
+      <point x="357.0" y="1898.0" />
+      <point x="137.0" y="1898.0" />
+      <point x="0.0" y="393.0" />
+    </edge>
+    <edge source="main.MainLogic" target="gui.Event_follower" relationship="TO_MANY">
+      <point x="0.0" y="-393.0" />
+      <point x="137.0" y="1058.0" />
+      <point x="177.0" y="1058.0" />
+      <point x="177.0" y="798.0" />
+      <point x="477.0" y="798.0" />
+      <point x="0.0" y="44.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5720277602191319" showDependencies="true" x="607.7398503597124" y="1511.4879999999998" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

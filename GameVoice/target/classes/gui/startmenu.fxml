@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StartMenuController">
+   <children>
+      <Label layoutX="250.0" layoutY="101.0" prefHeight="27.0" prefWidth="101.0" text="GameVoice">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="start_menu_label1" layoutX="277.0" layoutY="145.0" text="To Login" />
+      <Label fx:id="start_menu_label2" layoutX="271.0" layoutY="225.0" text="To Sign Up" />
+      <Button fx:id="start_menu_login" layoutX="277.0" layoutY="175.0" mnemonicParsing="false" onAction="#startMenuLoginButtonAction" text="Login" />
+      <Button fx:id="start_menu_register" layoutX="267.0" layoutY="253.0" mnemonicParsing="false" onAction="#startMenuRegisterButtonAction" prefHeight="25.0" prefWidth="67.0" text="Register" />
+   </children>
+</Pane>
